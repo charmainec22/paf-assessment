@@ -8,6 +8,7 @@ import javax.print.DocFlavor.STRING;
 import org.springframework.http.MediaType;
 import org.springframework.http.RequestEntity;
 import org.springframework.http.ResponseEntity;
+import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;
 
 import jakarta.json.Json;
@@ -20,6 +21,7 @@ import vttp2022.paf.assessment.eshop.models.LineItem;
 import vttp2022.paf.assessment.eshop.models.Order;
 import vttp2022.paf.assessment.eshop.models.OrderStatus;
 
+@Service
 public class WarehouseService {
 
 	// You cannot change the method's signature

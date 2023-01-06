@@ -11,9 +11,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
-
-
-
+import org.springframework.web.bind.annotation.RestController;
 import org.springframework.ui.Model;
 
 import jakarta.json.Json;
@@ -31,7 +29,7 @@ import vttp2022.paf.assessment.eshop.services.OrderException;
 import vttp2022.paf.assessment.eshop.services.OrderService;
 import vttp2022.paf.assessment.eshop.services.WarehouseService;
 
-@Controller
+@RestController
 @RequestMapping(path = "/api")
 public class OrderController {
 
